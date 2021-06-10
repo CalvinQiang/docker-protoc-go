@@ -6,7 +6,7 @@ RUN apk add --no-cache build-base curl automake autoconf libtool git zlib-dev
 #
 # https://micro.mu/blog/2019/10/04/deprecating-consul.html
 RUN apk add --no-cache go
-ENV GOPATH=/go \l
+ENV GOPATH=/go \
         PATH=/go/bin/:$PATH
 
 ENV GRPC_VERSION=1.16.0 \
